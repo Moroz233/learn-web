@@ -1,0 +1,38 @@
+header {
+  height: 80px;
+  background-color: #2ecc71;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px #2ecc71;
+  /* 1-е здвиг по оси х, 2-е по у, 3-е размер тени, 4 - цвет*/
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0; /*у бади по умолчанию есть по умолчанию оступы */
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.navigation-link:last-of-type {
+  margin-right: 0;
+}
+.hoverable {
+  transition: 0.3s;
+}
+.hoverable:hover {
+  opacity: 0.8;
+}
+
+.logo:hover {
+  transform: scale(1.05) rotate(360deg);
+}
